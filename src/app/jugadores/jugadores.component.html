@@ -1,0 +1,47 @@
+<p>jugadores works!</p>
+
+<!-- -------------- Los detalles en grande del jugador seleccionado -------- -->
+<app-detalles-jugadores [jugador]="selectedJugador"></app-detalles-jugadores>
+
+<!-- --------------- Las listas de quipos desplegando sus jugadores ------- -->
+<h2>Mis Equipos</h2>
+
+<ul class="equipos">
+  <!-- -------- Equipos 1 ------- -->
+  <h2>Equipo 1</h2>
+  <li
+    *ngFor="let jugador of equipos"
+    (click)="onSelect(jugador)"
+    [class.selected]="jugador === selectedJugador"
+  >
+    <span class="badge">{{ jugador.id }}</span> {{ jugador.name }}
+  </li>
+  <!-- -------- Equipos 2 ------- -->
+  <h2>Equipo 2</h2>
+  <li
+    *ngFor="let jugador of equipos"
+    (click)="onSelect(jugador)"
+    [class.selected]="jugador === selectedJugador"
+  >
+    <span class="badge">{{ jugador.id }}</span> {{ jugador.name }}
+  </li>
+  <!-- -------- Equipos 3 ------- -->
+  <h2>Equipo 3</h2>
+  <li
+    *ngFor="let jugador of equipos"
+    (click)="onSelect(jugador)"
+    [class.selected]="jugador === selectedJugador"
+  >
+    <span class="badge">{{ jugador.id }}</span> {{ jugador.name }}
+  </li>
+  <!-- -------- Equipos 4 ------- -->
+  <h2>Equipo 4</h2>
+  <li
+    *ngFor="let jugador of equipos"
+    (click)="onSelect(jugador)"
+    [class.selected]="jugador === selectedJugador"
+  >
+    <span class="badge">{{ jugador.id }}</span> {{ jugador.name }}
+  </li>
+
+</ul>

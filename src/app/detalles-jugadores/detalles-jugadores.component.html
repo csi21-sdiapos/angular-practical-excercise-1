@@ -1,0 +1,18 @@
+<p>detalles-jugadores works!</p>
+
+<div *ngIf="jugador">
+
+    <h2>{{ jugador.name | uppercase }} Details</h2>
+
+    <div>id: {{ jugador.id }}</div>
+    
+    <div>
+      <label for="hero-name">Nombre Jugador: </label>
+      <input 
+        id="jugador-name" 
+        [(ngModel)]="jugador.name" 
+        placeholder="name"
+      >
+    </div>
+  
+</div>

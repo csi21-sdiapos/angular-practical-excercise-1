@@ -1,0 +1,7 @@
+<p>listado works!</p>
+
+<ul class="equipos" *ngIf="listaEquipos.length"> <!-- si obtengo datos, lo muestro, si no, no muestro esto -->
+    <li *ngFor="let equipo of listaEquipos">
+        <span class="badge">{{ equipo.id }}</span> - {{ equipo.nombre }} <!-- este nombre, si es null al principio, daría error ... para ello creamos el ngIf arriba en el <ul> -->
+    </li>
+</ul>

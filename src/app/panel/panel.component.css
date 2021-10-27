@@ -1,0 +1,26 @@
+div {
+    width: 125px;
+    height: 125px;
+    display: inline-flex;
+    border-radius: 5px;
+    border: 1px solid gray;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.grupo-A {
+    background-color: lightblue;
+}
+.grupo-B {
+    background-color: lightcoral;
+}
+.grupo-C {
+    background-color: lightyellow;
+}
+.grupo-D {
+    background-color: lightgreen;
+}
